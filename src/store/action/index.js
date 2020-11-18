@@ -32,13 +32,13 @@ export const receiveGet = (location, data) => {
   }
 }
 
-const api = 'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001';
+const api = '';
 
 const apiGetWeather = location => dispatch => {
   dispatch(requestDate(location));
   return Axios.get(api, {
     params: {
-      Authorization: 'CWB-0D72654D-D8EA-41F0-9C54-A62FEF29F0CE',
+      Authorization: '',
       locationName: location
     }
   })
